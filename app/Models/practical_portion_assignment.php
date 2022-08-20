@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class practical_portion_assignment extends Model
+{
+    use HasFactory;
+    protected $table = 'practical_assignment_portion';
+    protected $primaryKey = 'id';
+    protected $fillable = [
+        'portion_id',
+        'assignment_id'
+    ];
+}
